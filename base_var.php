@@ -1,19 +1,19 @@
 <?php
 /**
- * php基础知识复习
- * zhangyu 2018-08-23
+ *   php基础知识复习 - 基础面试题
+ *   zhangyu 2018-11-27
  */
-
-//定义一个变量
-$a = range(0,1000);
-var_dump(memory_get_usage());
-//COW Copy On Write PHP开辟新内存写时复制
-//定义一个$b
-$b = $a;
-var_dump(memory_get_usage());
-
+$a=3;
+$b=6;
+if($a > 1 || $b=5){
+	echo $a.PHP_EOL;
+}
 $b = &$a;
-var_dump(memory_get_usage());
-//对a进行修改
-$a = range(0, 1000);
-var_dump(memory_get_usage());
+$b = 8;
+echo $a.PHP_EOL;
+echo $b++."\n";
+echo $b.PHP_EOL;
+
+
+$str = 'welcome to 斯塔克';
+echo strlen($str);
